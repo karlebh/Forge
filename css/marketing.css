@@ -1,0 +1,203 @@
+.marketing h3 {
+  text-align: center;
+  color: rgb(31 41 55/ 1);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.marketing svg {
+  flex-shrink: 0;
+  height: 1.5rem;
+  color: rgb(24 182 155 /1);
+}
+
+.offers svg {
+  flex-shrink: 0;
+  height: 1.5rem;
+  color: rgb(24 182 155 /1);
+}
+
+.marketing .offers {}
+
+.marketing .offers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketing .offers>div {
+  display: flex;
+  gap: 0 1rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 28rem;
+  margin: 2rem 0;
+}
+
+.marketing .offers>div>div h4 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgb(31 41 55 / 1);
+}
+
+.marketing .offers>div>div a {
+  font-weight: 600;
+  display: inline-block;
+  color: rgb(75 85 99 / 1);
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.25rem;
+  /* 20px */
+}
+
+.marketing .offers>div>div a:hover {
+  color: var(--teal);
+}
+
+.marketing .offers>div>div p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: .8rem;
+  color: rgb(75 85 99 / 1);
+}
+
+.marketing-links {
+  display: flex;
+  justify-content: center;
+  margin-top: .75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.marketing-links button {
+  background-color: #18b69b;
+  color: white;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  outline: none;
+  border: 0;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.marketing-links a span {
+  border-bottom: 2px solid rgb(209 213 219/1);
+  font-weight: 600;
+}
+
+.marketing-more {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgb(107 114 128 / 1);
+}
+
+.marketing-more:hover {
+  color: rgb(107 114 128);
+}
+
+.marketing-more a {
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.marketing-more a:hover {
+  color: rgb(31 41 55);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .marketing .offers>div>div h4 {
+    font-size: 1.125rem;
+    /* 18px */
+    line-height: 1.75rem;
+    /* 28px */
+  }
+
+  .marketing .offers>div>div p {
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 1.25rem;
+    /* 20px */
+  }
+
+  .marketing .offers {
+    column-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    gap: 2rem 0;
+  }
+
+  .marketing .offers>div {
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 33.33%;
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .marketing .offers>div>div h4 {
+    font-size: 1.25rem;
+    /* 20px */
+    line-height: 1.75rem;
+    /* 28px */
+  }
+
+  .marketing .offers>div>div a {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+    /* 24px */
+  }
+
+  .marketing .offers>div>div p {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+    /* 24px */
+  }
+
+  .marketing svg {
+    height: 2rem;
+  }
+
+  .marketing h3 {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+
+  #h1-stats {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .marketing .offers>div>div h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .marketing .offers>div>div a {
+    font-weight: 500;
+  }
+
+  .marketing .offers>div>div p {
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-align: justify;
+    margin-bottom: .8rem;
+  }
+}

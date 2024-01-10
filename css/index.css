@@ -1,0 +1,73 @@
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./marketing.css);
+@import url(./testimony.css);
+@import url(./pricing.css);
+@import url(./deploy.css);
+@import url(./octane.css);
+@import url(./serverless.css);
+@import url(./footer.css);
+
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --teal: #18b69b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Figtree, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #1f2937;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.message-btn {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 40;
+  background-color: rgb(24, 182, 155);
+  padding: .75rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.message-btn svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: rotate(-70deg);
+  cursor: pointer;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

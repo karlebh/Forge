@@ -1,0 +1,122 @@
+.serverless {
+  background-color: rgb(31 41 55 /1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -.1rem;
+  position: relative;
+  /* width: 100%; */
+}
+
+.fancy-svg-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.fancy-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  height: 110rem;
+  margin-left: -12rem;
+}
+
+.serverless>div {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.serverless h3 {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.serverless p {
+  margin: 2rem;
+  padding: 0 2rem;
+  color: rgb(156 163 175);
+  line-height: 1.25;
+  color: #cbd5e0;
+  max-width: 52rem;
+}
+
+.serverless a {
+  color: white;
+  display: inline-block;
+  margin-top: .25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: .25rem;
+}
+
+.serverless a span {
+  border-bottom: 2px solid rgb(209 213 219);
+}
+
+.serverless br {
+  display: none;
+}
+
+.serverless svg {
+  width: 8rem;
+}
+
+@media screen and (min-width: 640px) {
+  .serverless br {
+    display: inline
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .fancy-svg {
+    height: 13rem;
+    margin-left: -10rem;
+  }
+
+  .serverless a {
+    margin-top: 2.5rem;
+
+  }
+
+  .serverless svg {
+    width: 24rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fancy-svg {
+    height: 16rem;
+    margin-left: -9rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fancy-svg {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .serverless svg {
+    width: 11rem;
+  }
+
+  .serverless h3 {
+    margin-top: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 2.65rem;
+  }
+
+  .serverless p {
+    line-height: 1.375;
+    margin-top: 4rem;
+    font-size: 1.25rem;
+  }
+}

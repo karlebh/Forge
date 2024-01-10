@@ -1,0 +1,90 @@
+.octane {
+  margin-top: 5rem;
+  background-color: rgb(55 65 81 / 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.octane>div {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.octane h3 {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.octane p {
+  margin: 2rem;
+  padding: 0 2rem;
+  color: rgb(156 163 175);
+  line-height: 1.25;
+  color: #cbd5e0;
+  max-width: 52rem;
+}
+
+.octane a {
+  color: white;
+  display: inline-block;
+  margin-top: .25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: .25rem;
+}
+
+.octane a span {
+  border-bottom: 2px solid rgb(209 213 219);
+}
+
+.octane br {
+  display: none;
+}
+
+.octane svg {
+  width: 18rem;
+}
+
+@media screen and (min-width: 640px) {
+  .octane br {
+    display: inline
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .octane a {
+    margin-top: 2.5rem;
+
+  }
+
+  .octane svg {
+    width: 24rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .octane {
+    margin-top: 9rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .octane h3 {
+    margin-top: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 2.65rem;
+  }
+
+  .octane p {
+    line-height: 1.375;
+    margin-top: 4rem;
+    font-size: 1.25rem;
+  }
+}

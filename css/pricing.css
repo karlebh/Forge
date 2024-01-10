@@ -1,0 +1,141 @@
+@import url(./button-switch.css);
+
+.pricing {
+  margin-top: 5rem;
+}
+
+.pricing h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -.025em;
+  text-align: center;
+}
+
+.pricing-table {
+  display: flex;
+  place-content: center;
+  margin: .75rem 0;
+}
+
+.pricing-table>div {
+  border-radius: .5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 1px solid rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 32rem;
+  padding: 2.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.pricing-table .price-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.pricing-table .price-offers>div {
+  display: inline-flex;
+  gap: 0 1rem;
+}
+
+.pricing-table .price-offers svg {
+  height: 1.25rem;
+}
+
+.pricing-table h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.pricing-table .price {
+  display: inline-flex;
+  align-items: baseline;
+  align-self: center;
+  gap: 0 .4rem;
+}
+
+.pricing-table .price h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.unavailable {
+  color: rgb(156 163 175);
+}
+
+.available {
+  color: var(--teal);
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pricing-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.pricing-links button {
+  background-color: #18b69b;
+  color: white;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  outline: none;
+  border: 0;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.pricing-links p {
+  font-weight: 400;
+  color: rgb(107 114 128/ 1);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .pricing-table {
+    max-width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1280px) {
+  .price-list {
+    flex-direction: row;
+    padding: 0 5rem;
+  }
+
+  .price-list {
+    flex-direction: row;
+    gap: 0 2rem;
+  }
+
+  .pricing h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+}

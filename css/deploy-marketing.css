@@ -1,0 +1,140 @@
+.deploy-marketing {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 0;
+}
+
+.deploy-marketing>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 28rem;
+  padding: 0 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+.deploy-marketing .bottom-border {
+  width: 16%;
+  margin-top: .75rem;
+  margin: .75rem auto;
+  border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.deploy-marketing>div h1 {
+  text-align: center;
+  color: rgb(31 41 55/ 1);
+  font-size: .875rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: .75rem;
+}
+
+.deploy-marketing>div p {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.deploy-marketing>div a {
+  display: inline-block;
+  font-weight: 600;
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+
+.deploy-marketing>div a:hover {
+  color: var(--teal);
+}
+
+.deploy-marketing svg {
+  flex-shrink: 0;
+  height: 1.5rem;
+  color: rgb(24 182 155 /1);
+}
+
+@media screen and (min-width: 1024px) {
+  .deploy-marketing {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .deploy-marketing>div {
+    width: 33.33%;
+  }
+
+  .deploy-marketing>div p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+
+  .deploy-marketing>div h1 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .deploy-marketing .offers {
+    column-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    gap: 2rem 0;
+  }
+
+  .deploy-marketing .offers>div {
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 33.33%;
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .deploy-marketing>div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .deploy-marketing>div h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .deploy-marketing svg {
+    height: 2rem;
+  }
+
+  .deploy-marketing h3 {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+
+  #h1-stats {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .deploy-marketing .offers>div>div h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .deploy-marketing .offers>div>div a {
+    font-weight: 500;
+  }
+
+  .deploy-marketing .offers>div>div p {
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-align: justify;
+    margin-bottom: .8rem;
+  }
+}

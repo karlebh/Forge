@@ -1,0 +1,103 @@
+footer {
+  padding: 2rem 1rem;
+  background-color: rgb(249 250 251/1);
+}
+
+footer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgb(156 163 175);
+  margin-right: .3rem;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+  max-width: 1280px;
+}
+
+footer section a {
+  width: 100%;
+}
+
+footer section a>div {
+  border-bottom: 1px solid rgb(229 231 235);
+}
+
+footer section span {
+  font-weight: 600;
+  color: rgb(31 41 55);
+}
+
+footer section span:hover {
+  color: var(--teal);
+}
+
+footer section p,
+.laravel span {
+  margin: 1rem 0;
+  color: rgb(75 85 99);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+footer .content {
+  display: inline-flex;
+  align-items: center;
+}
+
+footer .laravel {
+  margin-top: 4rem;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .logo-box {
+    flex-direction: row;
+  }
+
+  footer {
+    padding: 2rem 3.5rem;
+  }
+
+  footer .laravel {
+    margin-top: 5rem;
+    display: block;
+  }
+
+  footer .laravel>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    padding-top: 8rem;
+  }
+
+  footer section {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem 0;
+  }
+
+  footer section a>div {
+    border-bottom: 0;
+    padding: .5rem 0;
+  }
+
+  footer section a:not(:first-child)>div {
+    border-left: 1px solid rgb(229 231 235);
+    padding-left: 1.5rem;
+  }
+}

@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Forge UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 21" class="logo">
+          <path
+            d="M38.971.659c2.062 0 3.013.37 3.595 1.11.846 1.11 1.322 3.33-.053 8.775s-2.907 7.613-4.335 8.776c-.952.74-2.115 1.11-4.176 1.11h-6.608c-2.062 0-3.066-.37-3.595-1.11-.846-1.11-1.322-3.33.106-8.776 1.374-5.445 2.96-7.612 4.388-8.775.952-.74 2.115-1.11 4.176-1.11h6.502zM29.35 15.619c.106.159.37.212 1.216.212h2.537c.846 0 1.163-.053 1.375-.212.264-.211.74-.74 1.797-5.075 1.11-4.335.899-4.863.74-5.075-.106-.159-.37-.211-1.216-.211h-2.485c-.846 0-1.163.053-1.374.211-.264.211-.74.74-1.797 5.075-1.163 4.388-.952 4.864-.793 5.075zm25.639-1.586c-.211-.264-.423-.37-1.692-.37h-2.485a.62.62 0 0 0-.581.476l-1.427 5.815a.62.62 0 0 1-.582.476h-5.128c-.264 0-.423-.212-.37-.476l4.705-18.82a.62.62 0 0 1 .582-.476h12.053c1.956 0 3.013.264 3.595 1.004.634.899.846 1.85.159 4.599-.899 3.701-2.273 4.758-4.652 5.234v.053c1.85.476 2.855 1.11 2.22 3.965l-.793 4.388c-.053.264-.317.529-.581.529h-5.234c-.212 0-.423-.159-.37-.423l.687-3.965c.211-1.427.106-1.692-.106-2.009zm-.37-4.652c1.11 0 1.427-.053 1.639-.211.37-.264.634-.74.899-1.903s.212-1.586 0-1.85c-.159-.159-.423-.211-1.533-.211h-2.749a.62.62 0 0 0-.581.476L51.5 8.958c-.053.264.106.476.37.476h2.749v-.053zM80.47.5c2.115 0 3.225.264 3.859 1.004.74.899 1.004 2.273.423 5.339a.62.62 0 0 1-.582.476h-4.916c-.264 0-.423-.211-.37-.423.212-1.216-.053-1.374-.212-1.586-.106-.159-.317-.211-1.216-.211h-2.537c-.899 0-1.163.053-1.374.211-.317.264-.899 1.163-1.85 5.181s-.793 4.969-.634 5.234c.106.159.37.211 1.269.211h2.696c.793 0 1.11-.053 1.322-.211.264-.211.793-.74 1.11-2.168l.053-.159h-3.806c-.264 0-.423-.211-.37-.476l.74-3.172a.62.62 0 0 1 .582-.476H83.8c.264 0 .423.211.37.476l-.476 1.956c-1.11 4.811-2.432 6.502-3.806 7.612-1.004.846-2.432 1.163-4.282 1.163h-6.608c-2.062 0-3.066-.37-3.648-1.163-.899-1.163-1.374-3.33-.053-8.828s2.855-7.718 4.282-8.828C70.531.87 71.694.5 73.756.5h6.714zm20.617 19.983H85.281c-.264 0-.423-.212-.37-.476L89.351.976A.62.62 0 0 1 89.933.5h18.396c.318 0 .476.317.265.634-.793 1.269-3.859 3.965-7.296 3.965h-6.396a.62.62 0 0 0-.581.476l-.476 2.115c-.053.264.106.476.37.476h8.616c.265 0 .423.211.371.476l-.741 3.33a.62.62 0 0 1-.581.476h-8.617a.62.62 0 0 0-.582.476l-.582 2.432c-.053.264.106.476.37.476h9.674c.265 0 .423.211.37.476l-.846 3.648c-.052.317-.317.529-.581.529zM25.121.659span.446a.62.62 0 0 0-.582.476l-.529 1.903c-.053.211.053.37.211.476.846.264 5.392.37 4.705 2.908l-.159.687-1.85 6.925-.159.687c-.687 2.537-3.119 2.643-4.123 2.908-.211.053-.37.264-.423.476L.01 20.007c-.053.264.106.476.37.476h8.828a.62.62 0 0 0 .582-.476l1.586-6.132a.62.62 0 0 1 .582-.476h5.657a.62.62 0 0 0 .581-.476l.846-3.278c.053-.264-.106-.476-.37-.476h-5.656c-.264 0-.423-.211-.37-.476l.793-2.96a.62.62 0 0 1 .582-.476h8.511a.62.62 0 0 0 .581-.476l2.273-3.595c.106-.317 0-.529-.264-.529z"
+            fill="currentColor"></path>
+        </svg>
+      </div>
+
+
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="open">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="close hide">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </div>
+
+      <div class="desktop_menu">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+        <a href="#">Blog</a>
+        <a href="#">Sign in</a>
+        <a href="#">Register</a>
+      </div>
+
+    </div>
+    <nav id="dropDown" class="hide">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Docs</a>
+      <a href="#">Blog</a>
+      <a href="#">Sign in</a>
+      <a href="#">Register</a>
+    </nav>
+  </header>
+
+  <div class="message-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+    </svg>
+  </div>
+
+
+  <main class="container">
+    <div>
+      <div class="hero">
+        <h1>Server management doesn't <br> have to be a nightmare</h1>
+        <h2>Provision and deploy unlimited PHP applications on DigitalOcean, <br>
+          Akamai, Vultr, Amazon, Hetzner and more.</h2>
+      </div>
+
+      <div class="links">
+        <div>
+          <button>
+            Start a free trial
+          </button>
+          <a href="#"><span>Learn more</span></a>
+        </div>
+      </div>
+
+
+      <div class="hero_image_container">
+        <img class="hero_image" src="./src/forge-overview.4fd82415.png" alt="">
+      </div>
+    </div>
+
+    <!--  marketing -->
+
+    <div class="marketing container">
+      <h3>Forge is already making life easier for <span style="color: rgb(24 182 155 /1);" id="h1-stats"> 607,649
+          applications</span>
+      </h3>
+      <div class="offers-container">
+
+        <div class="offers">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.455" stroke-linecap="round" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M8.727 16.727H5.455c-1.095.001-2.15-.41-2.956-1.15a4.36 4.36 0 0 1-1.396-2.848c-.091-1.09.23-2.177.902-3.041A4.37 4.37 0 0 1 4.727 8.06V8C4.727 3.983 7.983.727 12 .727S19.273 3.983 19.273 8v.06c1.076.185 2.044.767 2.712 1.631a4.37 4.37 0 0 1 .897 3.036c-.091 1.089-.587 2.103-1.39 2.844a4.36 4.36 0 0 1-2.947 1.156h-3.273m-7.636-4.363L12 8m0 0l4.364 4.364M12 8v14.546">
+              </path>
+            </svg>
+
+            <div>
+              <h4> Cutting Edge</h4>
+              <p> We install Nginx, PHP, MySQL, Postgres, Redis, and all of the other goodies you need on the cloud of
+                your
+                choice. No more out-dated PHP installations.
+              </p>
+              <a href="#">Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25a.8.8 0 0 1-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334a.82.82 0 0 1 .028-.21c.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093s.053-.04.079-.06.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068s.055.038.078.06c.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51a.81.81 0 0 1 .028-.208c.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06s.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068l.077.06c.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066s-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084s-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1s-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002V12.33L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z"
+                fillRule="even-odd" fill="currentColor"></path>
+            </svg>
+            <div>
+              <h4> Laravel, Integrated</h4>
+              <p>
+                Forge is built by the creators of the Laravel Framework and makes deploying your Laravel application a
+                delight.
+              </p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path d="M11 15L31 7V23L11 31V15Z"></path>
+              <path d="M6.907 23.037L1 25V9L21 1V7" stroke-linecap="round"></path>
+            </svg>
+            <div>
+              <h4> Push To Deploy</h4>
+              <p> Deploying code couldn't be any easier. Just push to master on your GitHub, Bitbucket, or custom Git
+                repository. We'll handle it from there.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path d="M16 31H3a2 2 0 0 1-2-2V13a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v1M5 11V8a7 7 0 0 1 7-7 7 7 0 0 1 7 7"
+                stroke-linecap="round"></path>
+              <path
+                d="M24 31a7 7 0 0 0 4.95-2.05A7 7 0 0 0 31 24a7 7 0 0 0-2.05-4.95A7 7 0 0 0 24 17a7 7 0 0 0-7 7 7 7 0 0 0 7 7h0z">
+              </path>
+              <path d="M21 24l2 2 4-4" stroke-linecap="round"></path>
+            </svg>
+            <div>
+              <h4>Free TLS Certificates</h4>
+              <p> Forge integrates with LetsEncrypt, allowing you to obtain free TLS (SSL) certificates for your Forge
+                powered
+                applications.
+              </p>
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M16 21a5 5 0 0 0 5-5 5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5h0zm0 3c-4.922 0-7.887 2.492-9.477 4.502C5.648 29.608 6.525 31 7.935 31h16.13c1.41 0 2.287-1.392 1.412-2.498C23.887 26.492 20.922 24 16 24z">
+              </path>
+              <path
+                d="M28.02 24.975c1.939-2.59 2.985-5.74 2.98-8.975 0-8.284-6.716-15-15-15S1 7.716 1 16c0 3.419 1.074 6.477 3 9"
+                stroke-linecap="round"></path>
+            </svg>
+            <div>
+              <h4> Collaborate</h4>
+              <p> Using our Business plan you may instantly share your server's management dashboard with your
+                co-workers.
+              </p>
+              <a href="#">
+                Learn more ›</a>
+            </div>
+          </div>
+
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M8.718 28.542l.503-.865a1 1 0 0 0-.973-.017 1 1 0 0 0-.527.819l.997.063zm3.562 1.476l.75.662a1 1 0 0 0 .207-.952 1 1 0 0 0-.701-.676l-.255.966zm-3.631-.369l-.998-.062a1 1 0 0 0 .523.942l.475-.88zm2.897 1.201l-.287.958a1 1 0 0 0 1.037-.296l-.75-.662zm8.909 0l-.75.662a1 1 0 0 0 1.036.296l-.287-.958h.001zm-.734-.832l-.256-.966a1 1 0 0 0-.701.676 1 1 0 0 0 .207.952l.75-.662zm3.56-1.476l.999-.063a1 1 0 0 0-.527-.82 1 1 0 0 0-.974.018l.503.865h-.001zm.07 1.107l.475.88a1 1 0 0 0 .523-.942l-.998.062zm7.5-9.195l.957.287a1 1 0 0 0-.296-1.037l-.662.75h.001zm-1.202 2.897l-.062.998a1 1 0 0 0 .942-.523l-.88-.475zm-1.107-.07l-.865-.502a1 1 0 0 0-.017.974 1 1 0 0 0 .819.526l.063-.997v-.001zm1.476-3.56l.662-.75a1 1 0 0 0-.952-.207 1 1 0 0 0-.676.701l.966.256zM29.65 8.649l.88-.475a1 1 0 0 0-.942-.523l.062.998zm1.201 2.897l.662.75a1 1 0 0 0 .296-1.037l-.958.287zm-.832.734l-.966.255a1 1 0 0 0 .676.701 1 1 0 0 0 .952-.207l-.662-.75zm-1.476-3.562l-.063-.998a1 1 0 0 0-.82.527 1 1 0 0 0 .018.974l.865-.503zM20.454 1.15l.287-.958a1 1 0 0 0-1.037.296l.75.662zm2.897 1.2l.998.063a1 1 0 0 0-.523-.942l-.475.88V2.35zm-.07 1.108l-.502.864a1 1 0 0 0 .973.017 1 1 0 0 0 .527-.818l-.997-.063h-.001zm-3.56-1.476l-.75-.662a1 1 0 0 0-.207.952 1 1 0 0 0 .701.676l.256-.966zM8.649 2.35l-.475-.88a1 1 0 0 0-.523.942l.998-.062zm2.897-1.201l.75-.662a1 1 0 0 0-1.037-.296l.287.958zm.734.832l.255.966a1 1 0 0 0 .701-.676 1 1 0 0 0-.207-.952l-.75.662zM8.718 3.458l-.998.063a1 1 0 0 0 .527.819 1 1 0 0 0 .974-.018l-.503-.864zM1.15 11.546l-.958-.287a1 1 0 0 0 .296 1.037l.662-.75zm1.2-2.897l.063-.998a1 1 0 0 0-.942.523l.88.475H2.35zm1.108.07l.864.502a1 1 0 0 0 .017-.973 1 1 0 0 0-.818-.527l-.063.997v.001zm-1.476 3.56l-.662.75a1 1 0 0 0 .952.207 1 1 0 0 0 .676-.701l-.966-.255v-.001zm.369 11.072l-.88.475a1 1 0 0 0 .942.523l-.062-.998zM1.15 20.455l-.662-.75a1 1 0 0 0-.296 1.036l.958-.287v.001zm.832-.734l.966-.256a1 1 0 0 0-.676-.701 1 1 0 0 0-.952.207l.662.75zm1.476 3.56l.063.999a1 1 0 0 0 .819-.527 1 1 0 0 0-.018-.974l-.864.503v-.001zm4.758 6.125a15.42 15.42 0 0 0 3.808 1.579l.511-1.933a13.41 13.41 0 0 1-3.314-1.375l-1.005 1.73v-.001zm1.431.306l.07-1.108-1.997-.125-.069 1.108 1.996.125zm2.185.18a14.41 14.41 0 0 1-2.708-1.123l-.95 1.76a16.41 16.41 0 0 0 3.085 1.28l.573-1.917zm-.303-.535l-.733.832 1.5 1.323.734-.832-1.5-1.323h-.001zm9.675.832l-.733-.832-1.5 1.323.733.832 1.5-1.323zm-1.228.796a15.42 15.42 0 0 0 3.808-1.579l-1.005-1.729a13.41 13.41 0 0 1-3.314 1.375l.511 1.933zm2.308-2.38l.069 1.107 1.996-.125-.07-1.108-1.995.125v.001zm.592.164a14.33 14.33 0 0 1-2.709 1.123l.574 1.916c1.069-.32 2.103-.749 3.085-1.279l-.95-1.76zm7.016-8.601a14.41 14.41 0 0 1-1.123 2.708l1.76.95a16.41 16.41 0 0 0 1.28-3.085l-1.917-.573zm-.18 2.185l-1.108-.07-.125 1.997 1.108.069.125-1.996zm-.306 1.431a15.42 15.42 0 0 0 1.579-3.808l-1.933-.511a13.41 13.41 0 0 1-1.375 3.314l1.73 1.005h-.001zm-.05-3.313l.833.733 1.323-1.5-.832-.733-1.323 1.5h-.001zM28.77 9.124a14.32 14.32 0 0 1 1.123 2.708l1.916-.573c-.32-1.069-.749-2.103-1.279-3.085l-1.76.95zm1.42 1.672l-.832.734 1.323 1.5.832-.734-1.323-1.5zm.796 1.228a15.42 15.42 0 0 0-1.579-3.808l-1.73 1.004a13.41 13.41 0 0 1 1.375 3.314l1.933-.511.001.001zm-2.38-2.307l1.107-.07-.125-1.996-1.108.07.125 1.996h.001zm-8.438-7.61a14.4 14.4 0 0 1 2.709 1.124l.95-1.76C22.844.94 21.81.511 20.74.19l-.573 1.917h.001zm2.186.181l-.07 1.108 1.997.125.069-1.108-1.996-.125zm1.431.306c-1.193-.694-2.474-1.226-3.808-1.579l-.511 1.933a13.43 13.43 0 0 1 3.314 1.374l1.005-1.728zm-3.313.05l.733-.833-1.5-1.323-.733.832 1.5 1.323v.001zM9.124 3.23a14.32 14.32 0 0 1 2.708-1.123L11.26.192A16.4 16.4 0 0 0 8.174 1.47l.95 1.76zm1.672-1.42l.734.832 1.5-1.323-.734-.832-1.5 1.323zm1.228-.796a15.41 15.41 0 0 0-3.808 1.579L9.22 4.322a13.41 13.41 0 0 1 3.314-1.374l-.511-1.933.001-.001zm-2.307 2.38l-.07-1.107-1.996.125.07 1.108 1.996-.125v-.001zm-7.61 8.438a14.4 14.4 0 0 1 1.124-2.709l-1.76-.95A16.4 16.4 0 0 0 .19 11.26l1.917.573v-.001zm.181-2.186l1.108.07.125-1.997-1.108-.069-.125 1.996zm.306-1.431c-.694 1.193-1.226 2.474-1.579 3.808l1.933.511A13.41 13.41 0 0 1 4.322 9.22L2.594 8.216v-.001zm.05 3.314l-.833-.734-1.323 1.5.832.734 1.323-1.5h.001zm.587 11.346c-.466-.863-.842-1.77-1.123-2.709l-1.916.574c.32 1.069.749 2.103 1.279 3.085l1.76-.95zm-1.42-1.672l.832-.733-1.323-1.5-.832.733 1.323 1.5zm-.796-1.228a15.41 15.41 0 0 0 1.579 3.808l1.728-1.005c-.604-1.038-1.066-2.153-1.374-3.314l-1.933.511zm2.38 2.308l-1.107.069.125 1.996 1.108-.07-.125-1.995h-.001z"
+                fill="currentColor"></path>
+              <path d="M16 21a5 5 0 0 0 5-5 5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5h0z" stroke="currentColor"
+                stroke-width="2" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h4> Dead Simple Queues</h4>
+              <p> Easily start and manage supervised Laravel Queue workers directly from Forge. No more manual
+                Supervisor
+                configuration.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" fill="none" class="h-6 text-teal-400 xl:h-8">
+              <path d="M15 1l14 8c0 10-4.667 18-14 22C5.667 27 1 19 1 9l14-8z" stroke="currentColor" stroke-width="2"
+                stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h4> Secure By Default</h4>
+              <p> All Forge servers require SSH key authentication and your firewall comes configured out of the box.
+                Security
+                updates are installed automatically.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M23 14l3 3-3 3M2 1h26a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h0zm10 19H2a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h15l-5 8zm5 11H2a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h10l5 7z">
+              </path>
+              <path d="M24 17h-2a5 5 0 0 0-5 5m6 9l-3-3 3-3m-1 3h2a5 5 0 0 0 5-5"></path>
+            </svg>
+            <div>
+              <h4> Database Backups</h4>
+              <p> Our Business plan customers may safely and securely backup your MySQL or Postgres databases to AWS S3
+                or
+                DigitalOcean Spaces.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M20.088 1.564a14.91 14.91 0 0 1 3.229 1.338l-.104 1.642a4 4 0 0 0 1.164 3.079 4 4 0 0 0 3.079 1.164l1.642-.104a14.91 14.91 0 0 1 1.338 3.23L29.201 13a4 4 0 0 0-1.354 3 4 4 0 0 0 1.354 3l1.235 1.088c-.318 1.125-.767 2.209-1.338 3.229l-1.642-.104a4 4 0 0 0-3.079 1.164 4 4 0 0 0-1.164 3.079l.104 1.642c-1.02.571-2.105 1.02-3.23 1.338L19 29.201a4 4 0 0 0-3-1.354 4 4 0 0 0-3 1.354l-1.088 1.235c-1.125-.318-2.209-.767-3.229-1.338l.104-1.642a4 4 0 0 0-1.164-3.079 4 4 0 0 0-3.079-1.164l-1.642.104a14.91 14.91 0 0 1-1.338-3.23L2.799 19a4 4 0 0 0 1-1.354A4 4 0 0 0 4.153 16a4 4 0 0 0-.354-1.646 4 4 0 0 0-1-1.354l-1.235-1.088a14.91 14.91 0 0 1 1.338-3.229l1.642.104a4 4 0 0 0 3.079-1.164 4 4 0 0 0 1.164-3.079l-.104-1.642c1.02-.571 2.105-1.02 3.23-1.338L13 2.799a4 4 0 0 0 1.354 1A4 4 0 0 0 16 4.153a4 4 0 0 0 1.646-.354 4 4 0 0 0 1.354-1l1.088-1.235z">
+              </path>
+              <path d="M16 21a5 5 0 1 0 0-10 5 5 0 1 0 0 10z"></path>
+            </svg>
+            <div>
+              <h4> Powerful API</h4>
+              <p> You can manage your servers programmatically using our robust API, which provides access to the vast
+                majority of Forge features.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linejoin="round" class="h-6 text-teal-400 xl:h-8">
+              <path d="M23 30a5 5 0 1 0 0-10 5 5 0 1 0 0 10z"></path>
+              <path d="M17 25.5h3m3.5-3.5v-3 3zm0 9v-3 3zm2.5-5.5h3-3z" stroke-linecap="round"></path>
+              <path d="M13 13a6 6 0 1 0 0-12 6 6 0 1 0 0 12z"></path>
+              <path
+                d="M18.277 18.022A13.79 13.79 0 0 0 13 17c-4.37 0-8.214 1.894-11.532 5.682a2 2 0 0 0-.317 2.144A2 2 0 0 0 2.972 26H13"
+                stroke-linecap="round"></path>
+            </svg>
+            <div>
+              <h4> User Isolation</h4>
+              <p> Run each of the sites on your servers as a separate, secure user, preventing compromised applications
+                from
+                accessing other sites on the server.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M9.333 7.667V1v6.667zm13.333 0V1v6.667zm-15 6.667h16.667H7.666zM4.333 31h23.333c.884 0 1.732-.351 2.357-.976S31 28.551 31 27.667v-20c0-.884-.351-1.732-.976-2.357s-1.473-.976-2.357-.976H4.333c-.884 0-1.732.351-2.357.976S1 6.783 1 7.667v20c0 .884.351 1.732.976 2.357S3.449 31 4.333 31z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h4> Task Scheduling</h4>
+              <p> Schedule any recurring tasks that need to run on your server. Use convenient predefined schedules or
+                customize them with cron expressions.
+              </p>
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" fill="none" class="h-6 text-teal-400 xl:h-8">
+              <path d="M16.667 12.667V1l-15 18.333h11.667V31l15-18.333H16.667z" stroke="currentColor" stroke-width="2"
+                stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h4>Server Monitoring</h4>
+              <p> Quickly monitor your server's CPU, disk space and average load. Plus, we will notify you of server
+                health
+                changes in real-time.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30" fill="none" class="h-6 text-teal-400 xl:h-8">
+              <path
+                d="M9.333 10l5 5-5 5V10zm8.333 10h5-5zM4.333 28.333h23.333c.884 0 1.732-.351 2.357-.976S31 25.884 31 25V5c0-.884-.351-1.732-.976-2.357s-1.473-.976-2.357-.976H4.333c-.884 0-1.732.351-2.357.976S1 4.116 1 5v20c0 .884.351 1.732.976 2.357s1.473.976 2.357.976z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <h4> Log File Access</h4>
+              <p> Scan through your application, server, and site logs with the click of a button - directly from Forge.
+              </p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+
+          <div>
+            <svg viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 text-teal-400 xl:h-8">
+              <path d="M15 28V35" stroke="currentColor" stroke-width="2.36842" stroke-linecap="round"></path>
+              <path d="M7 30V33" stroke="currentColor" stroke-width="2.36842" stroke-linecap="round"></path>
+              <path d="M23 30V33" stroke="currentColor" stroke-width="2.36842" stroke-linecap="round"></path>
+              <path
+                d="M19.605 2.95003C17.9197 0.349988 14.0804 0.349988 12.395 2.95003L1.68501 19.4726C-0.143658 22.2937 1.90329 26 5.29004 26H7.77834C10.0143 26 12.0437 24.7183 12.9682 22.7225L13.7505 21.0336C14.4253 19.577 16.5357 19.577 17.2105 21.0336L17.9928 22.7225C18.9174 24.7183 20.9468 26 23.1827 26H26.7099C30.0967 26 32.1437 22.2937 30.315 19.4726L19.605 2.95003Z"
+                stroke="currentColor" stroke-width="2"></path>
+            </svg>
+            <div>
+              <h4> Seamless Envoyer Integration</h4>
+              <p> Laravel Forge offers zero downtime deployments, thanks to a seamless integration with Envoyer.</p>
+
+              <a href="#"> Learn more ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marketing-links">
+      <div>
+        <button class="pricing">
+          Pricing
+        </button>
+        <a href="#"><span>More Features</span></a>
+      </div>
+    </div>
+
+    <div class="testimony">
+
+      <div class="transparent-below"></div>
+      <h1>
+        <span style="color:rgb(24 182 155 /1);"> Loved by thousands of developers.</span>
+        <br class="break">
+        <span> This is what people are saying about Laravel Forge.</span>
+      </h1>
+
+      <div class="testimonies">
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/caleb-porzio.49b964cd.png" alt=""></div>
+            <div>
+              <h4>Caleb Porzio</h4>
+              <span>Creator of <span class="teal">Livewire</span> and <span class="teal">Alpine.js</span></span>
+            </div>
+          </div>
+          <p>Everything I build goes on Forge. Makes server management too easy 👌 ❤️</p>
+        </div>
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/marcel-pociot.7fd81737.png" alt=""></div>
+            <div>
+              <h5>Marcel Pociot</h5>
+              <span>co-founder of <span class="teal">Beyond Code</span></span>
+            </div>
+          </div>
+          <p>Laravel Forge has saved us hundreds of hours of precious development time and I couldn’t imagine running
+            our business without it.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/alex-garrett-smith.3fb350bb.png" alt=""></div>
+            <div>
+              <h5>Alex Garrett-Smith</h5>
+              <span>Founder of <span class="teal">Codecourse</span></span>
+            </div>
+          </div>
+          <p>I've used Forge since its launch, and I've honestly never thought about switching anywhere else</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/sam-carre.b368de89.png" alt=""></div>
+            <div>
+              <h5>Sam Carré</h5>
+              <span>Head of Engineering at <span class="teal">Code Potato</span></span>
+            </div>
+          </div>
+          <p>Forge takes the hard work out of provisioning and setting up servers. It helps us ship code faster and
+            worry less about deploying and managing servers</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/beau-simensen.258fc695.png" alt=""></div>
+            <div>
+              <h5>Beau Simensen</h5>
+              <span>Software Developer at <span class="teal">dflydev</span></span>
+            </div>
+          </div>
+          <p>Forge helps me focus on writing software instead of writing and maintaining deployment solutions.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/chris-fidao.28121904.png" alt=""></div>
+            <div>
+              <h5>Chris Fidao</h5>
+              <span>Co-founder of <span class="teal">Chipper CI</span></span>
+            </div>
+          </div>
+          <p>Forge gives me the convenience I love while letting me keep full control of my servers.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/eric-barnes.5606a0d5.png" alt=""></div>
+            <div>
+              <h5>Eric Barnes</h5>
+              <span>Content Curator at <span class="teal">Laravel News</span></span>
+            </div>
+          </div>
+          <p>Never before has launching new servers been this easy.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/brad-kilshaw.cbd5030d.png" alt=""></div>
+            <div>
+              <h5>Brad Kilshaw</h5>
+              <span>Developer</span>
+            </div>
+          </div>
+          <p>Forge has been instrumental to our success by allowing us to stay focused on what we're good at;
+            development. Being able to quickly and reliably spin up either single or multi-server environments in
+            minutes without ever having to directly interact with a server is a huge win.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/patrick-brouwers.ed95107c.png" alt=""></div>
+            <div>
+              <h5>Patrick Brouwers</h5>
+              <span>Developer at <span class="teal">SpartnerNL</span></span>
+            </div>
+          </div>
+          <p>Using Forge is an absolute no brainer. It has every thing a Laravel dev needs to host their applications!
+          </p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/freek-van-der-herten.42dee7e1.png" alt=""></div>
+            <div>
+              <h5>Freek van der Herten</h5>
+              <span>PHP Developer at <spam class="teal">Spatie</spam></span>
+            </div>
+          </div>
+          <p>Forge is a game changer in server management. It gave us the confidence to move from crappy shared hosting
+            to reliable, quality servers. Using Forge feels like having a server specialist in our team. Proud to be a
+            day-one customer! 👍</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/taylor-maguire.57dfbc12.png" alt=""></div>
+            <div>
+              <h5>Taylor Maguire</h5>
+              <span>Developer</span>
+            </div>
+          </div>
+          <p>I would not want to manage servers and deployments any other way again. Laravel Forge just works.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="" alt=""></div>
+            <div>
+              <h5>Name</h5>
+              <span>title</span>
+            </div>
+          </div>
+          <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+            doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+            manage servers for more than 10+ projects without any pain.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/alejandro-zepeda.e7985ad2.png" alt=""></div>
+            <div>
+              <h5>Alejandro Zepeda</h5>
+              <span>
+                Founder of <span class="teal">joinfan.co</span></span>
+            </div>
+          </div>
+          <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+            doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+            manage servers for more than 10+ projects without any pain.</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/simon-bennett.84b08e13.png" alt=""></div>
+            <div>
+              <h5>Simon Bennett</h5>
+              <span>
+                Founder of <span class="teal">SnapShooter</span></span>
+            </div>
+          </div>
+          <p>I always recommend that people use Forge to host Laravel and other PHP frameworks, like Craft CMS or
+            WordPress. There is no other way to get set up quickly as with Forge. They have thought of everything!</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/mikkel-lindblom.61c7a4c4.png" alt=""></div>
+            <div>
+              <h5>Mikkel Lindblom</h5>
+              <span>
+                Co-Founder and CTO of <span class="teal">Moxso</span></span>
+            </div>
+          </div>
+          <p>The feature rich deployment tool you need for every day operations. Worth every penny 🤟</p>
+        </div>
+
+
+        <div class="comment">
+          <div class="comment-header">
+            <div><img src="https://forge.laravel.com/build/assets/seba-pastore.71194e46.png" alt=""></div>
+            <div>
+              <h5>
+                Seba Pastore</h5>
+              <span>
+              </span>Software Developer</span>
+            </div>
+          </div>
+          <p>Been using Forge for almost 2 years. I just wonder why I didn't start earlier.</p>
+        </div>
+
+
+      </div>
+
+      <div class="tablet-testimonies">
+
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/caleb-porzio.49b964cd.png" alt=""></div>
+              <div>
+                <h4>Caleb Porzio</h4>
+                <span>Creator of <span class="teal">Livewire</span> and <span class="teal">Alpine.js</span></span>
+              </div>
+            </div>
+            <p>Everything I build goes on Forge. Makes server management too easy 👌 ❤️</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/marcel-pociot.7fd81737.png" alt=""></div>
+              <div>
+                <h5>Marcel Pociot</h5>
+                <span>co-founder of <span class="teal">Beyond Code</span></span>
+              </div>
+            </div>
+            <p>Laravel Forge has saved us hundreds of hours of precious development time and I couldn’t imagine running
+              our business without it.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/alex-garrett-smith.3fb350bb.png" alt=""></div>
+              <div>
+                <h5>Alex Garrett-Smith</h5>
+                <span>Founder of <span class="teal">Codecourse</span></span>
+              </div>
+            </div>
+            <p>I've used Forge since its launch, and I've honestly never thought about switching anywhere else</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/sam-carre.b368de89.png" alt=""></div>
+              <div>
+                <h5>Sam Carré</h5>
+                <span>Head of Engineering at <span class="teal">Code Potato</span></span>
+              </div>
+            </div>
+            <p>Forge takes the hard work out of provisioning and setting up servers. It helps us ship code faster and
+              worry less about deploying and managing servers</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/beau-simensen.258fc695.png" alt=""></div>
+              <div>
+                <h5>Beau Simensen</h5>
+                <span>Software Developer at <span class="teal">dflydev</span></span>
+              </div>
+            </div>
+            <p>Forge helps me focus on writing software instead of writing and maintaining deployment solutions.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/chris-fidao.28121904.png" alt=""></div>
+              <div>
+                <h5>Chris Fidao</h5>
+                <span>Co-founder of <span class="teal">Chipper CI</span></span>
+              </div>
+            </div>
+            <p>Forge gives me the convenience I love while letting me keep full control of my servers.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/eric-barnes.5606a0d5.png" alt=""></div>
+              <div>
+                <h5>Eric Barnes</h5>
+                <span>Content Curator at <span class="teal">Laravel News</span></span>
+              </div>
+            </div>
+            <p>Never before has launching new servers been this easy.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/brad-kilshaw.cbd5030d.png" alt=""></div>
+              <div>
+                <h5>Brad Kilshaw</h5>
+                <span>Developer</span>
+              </div>
+            </div>
+            <p>Forge has been instrumental to our success by allowing us to stay focused on what we're good at;
+              development. Being able to quickly and reliably spin up either single or multi-server environments in
+              minutes without ever having to directly interact with a server is a huge win.</p>
+          </div>
+
+
+        </div>
+
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/patrick-brouwers.ed95107c.png" alt=""></div>
+              <div>
+                <h5>Patrick Brouwers</h5>
+                <span>Developer at <span class="teal">SpartnerNL</span></span>
+              </div>
+            </div>
+            <p>Using Forge is an absolute no brainer. It has every thing a Laravel dev needs to host their applications!
+            </p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/freek-van-der-herten.42dee7e1.png" alt=""></div>
+              <div>
+                <h5>Freek van der Herten</h5>
+                <span>PHP Developer at <spam class="teal">Spatie</spam></span>
+              </div>
+            </div>
+            <p>Forge is a game changer in server management. It gave us the confidence to move from crappy shared
+              hosting
+              to reliable, quality servers. Using Forge feels like having a server specialist in our team. Proud to be a
+              day-one customer! 👍</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/taylor-maguire.57dfbc12.png" alt=""></div>
+              <div>
+                <h5>Taylor Maguire</h5>
+                <span>Developer</span>
+              </div>
+            </div>
+            <p>I would not want to manage servers and deployments any other way again. Laravel Forge just works.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="" alt=""></div>
+              <div>
+                <h5>Name</h5>
+                <span>title</span>
+              </div>
+            </div>
+            <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+              doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+              manage servers for more than 10+ projects without any pain.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/alejandro-zepeda.e7985ad2.png" alt=""></div>
+              <div>
+                <h5>Alejandro Zepeda</h5>
+                <span>
+                  Founder of <span class="teal">joinfan.co</span></span>
+              </div>
+            </div>
+            <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+              doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+              manage servers for more than 10+ projects without any pain.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/simon-bennett.84b08e13.png" alt=""></div>
+              <div>
+                <h5>Simon Bennett</h5>
+                <span>
+                  Founder of <span class="teal">SnapShooter</span></span>
+              </div>
+            </div>
+            <p>I always recommend that people use Forge to host Laravel and other PHP frameworks, like Craft CMS or
+              WordPress. There is no other way to get set up quickly as with Forge. They have thought of everything!</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/mikkel-lindblom.61c7a4c4.png" alt=""></div>
+              <div>
+                <h5>Mikkel Lindblom</h5>
+                <span>
+                  Co-Founder and CTO of <span class="teal">Moxso</span></span>
+              </div>
+            </div>
+            <p>The feature rich deployment tool you need for every day operations. Worth every penny 🤟</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/seba-pastore.71194e46.png" alt=""></div>
+              <div>
+                <h5>
+                  Seba Pastore</h5>
+                <span>
+                </span>Software Developer</span>
+              </div>
+            </div>
+            <p>Been using Forge for almost 2 years. I just wonder why I didn't start earlier.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="desktop-testimonies">
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/caleb-porzio.49b964cd.png" alt=""></div>
+              <div>
+                <h4>Caleb Porzio</h4>
+                <span>Creator of <span class="teal">Livewire</span> and <span class="teal">Alpine.js</span></span>
+              </div>
+            </div>
+            <p>Everything I build goes on Forge. Makes server management too easy 👌 ❤️</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/marcel-pociot.7fd81737.png" alt=""></div>
+              <div>
+                <h5>Marcel Pociot</h5>
+                <span>co-founder of <span class="teal">Beyond Code</span></span>
+              </div>
+            </div>
+            <p>Laravel Forge has saved us hundreds of hours of precious development time and I couldn’t imagine running
+              our business without it.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/alex-garrett-smith.3fb350bb.png" alt=""></div>
+              <div>
+                <h5>Alex Garrett-Smith</h5>
+                <span>Founder of <span class="teal">Codecourse</span></span>
+              </div>
+            </div>
+            <p>I've used Forge since its launch, and I've honestly never thought about switching anywhere else</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/sam-carre.b368de89.png" alt=""></div>
+              <div>
+                <h5>Sam Carré</h5>
+                <span>Head of Engineering at <span class="teal">Code Potato</span></span>
+              </div>
+            </div>
+            <p>Forge takes the hard work out of provisioning and setting up servers. It helps us ship code faster and
+              worry less about deploying and managing servers</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/beau-simensen.258fc695.png" alt=""></div>
+              <div>
+                <h5>Beau Simensen</h5>
+                <span>Software Developer at <span class="teal">dflydev</span></span>
+              </div>
+            </div>
+            <p>Forge helps me focus on writing software instead of writing and maintaining deployment solutions.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/patrick-brouwers.ed95107c.png" alt=""></div>
+              <div>
+                <h5>Patrick Brouwers</h5>
+                <span>Developer at <span class="teal">SpartnerNL</span></span>
+              </div>
+            </div>
+            <p>Using Forge is an absolute no brainer. It has every thing a Laravel dev needs to host their applications!
+            </p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/freek-van-der-herten.42dee7e1.png" alt=""></div>
+              <div>
+                <h5>Freek van der Herten</h5>
+                <span>PHP Developer at <spam class="teal">Spatie</spam></span>
+              </div>
+            </div>
+            <p>Forge is a game changer in server management. It gave us the confidence to move from crappy shared
+              hosting
+              to reliable, quality servers. Using Forge feels like having a server specialist in our team. Proud to be a
+              day-one customer! 👍</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/taylor-maguire.57dfbc12.png" alt=""></div>
+              <div>
+                <h5>Taylor Maguire</h5>
+                <span>Developer</span>
+              </div>
+            </div>
+            <p>I would not want to manage servers and deployments any other way again. Laravel Forge just works.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="" alt=""></div>
+              <div>
+                <h5>Name</h5>
+                <span>title</span>
+              </div>
+            </div>
+            <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+              doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+              manage servers for more than 10+ projects without any pain.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/alejandro-zepeda.e7985ad2.png" alt=""></div>
+              <div>
+                <h5>Alejandro Zepeda</h5>
+                <span>
+                  Founder of <span class="teal">joinfan.co</span></span>
+              </div>
+            </div>
+            <p>I always struggled setting up Nginx, PHP-FPM, SSL, and spinning up new servers, and wasting valuable time
+              doing this instead of building my sites. With Forge, I just press some buttons, and voila! it's done! I
+              manage servers for more than 10+ projects without any pain.</p>
+          </div>
+
+
+        </div>
+
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/chris-fidao.28121904.png" alt=""></div>
+              <div>
+                <h5>Chris Fidao</h5>
+                <span>Co-founder of <span class="teal">Chipper CI</span></span>
+              </div>
+            </div>
+            <p>Forge gives me the convenience I love while letting me keep full control of my servers.</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/eric-barnes.5606a0d5.png" alt=""></div>
+              <div>
+                <h5>Eric Barnes</h5>
+                <span>Content Curator at <span class="teal">Laravel News</span></span>
+              </div>
+            </div>
+            <p>Never before has launching new servers been this easy.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/brad-kilshaw.cbd5030d.png" alt=""></div>
+              <div>
+                <h5>Brad Kilshaw</h5>
+                <span>Developer</span>
+              </div>
+            </div>
+            <p>Forge has been instrumental to our success by allowing us to stay focused on what we're good at;
+              development. Being able to quickly and reliably spin up either single or multi-server environments in
+              minutes without ever having to directly interact with a server is a huge win.</p>
+          </div>
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/simon-bennett.84b08e13.png" alt=""></div>
+              <div>
+                <h5>Simon Bennett</h5>
+                <span>
+                  Founder of <span class="teal">SnapShooter</span></span>
+              </div>
+            </div>
+            <p>I always recommend that people use Forge to host Laravel and other PHP frameworks, like Craft CMS or
+              WordPress. There is no other way to get set up quickly as with Forge. They have thought of everything!</p>
+          </div>
+
+
+          <div class="comment">
+            <div class="comment-header">
+              <div><img src="https://forge.laravel.com/build/assets/mikkel-lindblom.61c7a4c4.png" alt=""></div>
+              <div>
+                <h5>Mikkel Lindblom</h5>
+                <span>
+                  Co-Founder and CTO of <span class="teal">Moxso</span></span>
+              </div>
+            </div>
+            <p>The feature rich deployment tool you need for every day operations. Worth every penny 🤟</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <section class="container">
+      <div class="pricing">
+        <h1> Affordable plans for every developer</h1>
+
+        <div style="display: flex;justify-content: center;align-items: center;
+          gap: 0 .5rem; margin-top: .5rem;font-weight: 600;font-size: 1rem;line-height: 2rem;
+          ">
+          <span>MONTHLY</span>
+          <div>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <span>YEARLY</span>
+        </div>
+      </div>
+
+      <div class="price-list">
+        <div class="pricing-table">
+          <div>
+            <h3>Hobby</h3>
+
+            <div class="price">
+              <h1>$12</h1>
+              <span>/</span>
+              <span>month</span>
+            </div>
+
+            <p>The essentials to provide your best work for clients.</p>
+
+            <div class="price-offers">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>One Server</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Sites</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Deployments
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Push To Deploy
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Basic Support
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Share With Teammates
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Database Backups
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Server Metric Monitoring
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div>
+            <h3>Growth</h3>
+
+            <div class="price">
+              <h1>$19</h1>
+              <span>/</span>
+              <span>month</span>
+            </div>
+
+            <p>A plan that scales with your rapidly growing business.</p>
+
+            <div class="price-offers">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span><b>Unlimited</b> Server</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Sites</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Deployments
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Push To Deploy
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Basic Support
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Share With Teammates
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Database Backups
+                </span>
+              </div>
+
+              <div class="unavailable">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2" class="mr-3 h-5 text-gray-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                </svg>
+                <span>Server Metric Monitoring
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-table">
+          <div>
+            <h3>Business</h3>
+
+            <div class="price">
+              <h1>$39</h1>
+              <span>/</span>
+              <span>month</span>
+            </div>
+
+            <p>Dedicated support and infrastructure for your company.</p>
+
+            <div class="price-offers">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span><b>Unlimited</b> Server</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Sites</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Unlimited Deployments
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Push To Deploy
+                </span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span><b>Priority</b> Support
+                </span>
+              </div>
+
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available"
+                  data-v-4e7fb11c="">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Share With Teammates
+                </span>
+              </div>
+
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available"
+                  data-v-4e7fb11c="">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Database Backups
+                </span>
+              </div>
+
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="available"
+                  data-v-4e7fb11c="">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Server Metric Monitoring
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-links">
+        <div><button>Start a free trial</button></div>
+        <p>All prices are in <span style="border-bottom: 2px solid rgb(209 213 219/1);">USD</span>. Server provider
+          costs not included.</p>
+      </div>
+    </section>
+
+    <section class="deploy">
+      <div class="center">
+        <div>
+          <h1> Deploy your application in minutes</h1>
+          <p> Forge links to your account on one of our supported
+            cloud
+            providers. Or, you can
+            even provision a VPS on the
+            custom provider of your choice.</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="https://forge.laravel.com/build/assets/providers.ac0dddf8.svg" alt="">
+      </div>
+
+      <div class="center">
+        <div>
+          <h1> We know there is no one size fits all</h1>
+          <p> Forge can provision a multitude of server types. Whether you are looking for a single server that can do
+            it
+            all
+            or need to scale your infrastructure to an array of networked servers, Forge can do it all.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="deploy-marketing">
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" class="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+            </path>
+          </svg>
+        </div>
+
+        <h1>Application Servers</h1>
+
+        <div class="bottom-border"></div>
+
+        <p>The kitchen sink! Everything you need to deploy a Laravel / PHP application within a single server.</p>
+
+        <a href="#"> Learn more ›</a>
+      </div>
+
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="">
+            <path fill-rule="evenodd"
+              d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118-.731.448-1.358 1.047-1.838 1.758S4.226 8.155 4.083 9zM10 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm0 2c-.076 0-.232.032-.465.262s-.497.623-.737 1.182c-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182S10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118.731.448 1.358 1.047 1.838 1.758s.802 1.515.945 2.361h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182S9.924 16 10 16s.232-.032.465-.262.498-.623.737-1.182c.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946c-.143.845-.465 1.65-.945 2.361s-1.107 1.31-1.838 1.758zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083c.143.845.465 1.65.945 2.361s1.107 1.31 1.838 1.758z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+
+        <h1>Web Servers</h1>
+        <div class="bottom-border"></div>
+        <p>Web servers are servers built to handle your PHP application's incoming HTTP traffic.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+
+      <div>
+        <div>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+            </path>
+          </svg>
+        </div>
+        <h1>Worker Servers</h1>
+        <div class="bottom-border"></div>
+        <p>Worker servers function as dedicated PHP queue workers for your application.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+
+
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="">
+            <path
+              d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3zm0-5v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7zm14-2c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z">
+            </path>
+          </svg>
+        </div>
+        <h1>Database Servers</h1>
+        <div class="bottom-border"></div>
+
+        <p>Dedicated MySQL / MariaDB / Postgres servers to help you grow and scale your application.</p>
+        <a href="#">Learn more ›</a>
+      </div>
+
+      <div>
+        <div>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+          </svg>
+        </div>
+
+        <h1>Cache Servers</h1>
+        <div class="bottom-border"></div>
+        <p>Cache servers host Redis or Memcached instances that you can scale independently.</p>
+        <a href="#"> Learn more ›</a>
+      </div>
+
+      <div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="">
+            <path fill-rule="evenodd"
+              d="M6 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4zM0 6a6 6 0 0 1 2.46-4.845A6 6 0 0 1 7.824.283a6 6 0 0 1 3.867 3.818 6 6 0 0 1-.802 5.375l4.817 4.817a1 1 0 0 1-.012 1.402 1 1 0 0 1-1.402.012l-4.816-4.816a6 6 0 0 1-6.229.442A6 6 0 0 1 0 6z">
+            </path>
+          </svg>
+        </div>
+        <h1>Meilisearch Server</h1>
+        <div class="bottom-border"></div>
+        <p>Is your application search heavy? Spin up a dedicate Meilisearch server instance.</p>
+        <a href="#"> Learn more ›</a>
+      </div>
+
+      <div>
+        <div>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3">
+            </path>
+          </svg>
+        </div>
+        <h1>Load Balancers</h1>
+        <div class="bottom-border"></div>
+        <p>Handle more traffic by provisiong load balancers to distribute web traffic across your servers.</p>
+        <a href="#"> Learn more ›</a>
+      </div>
+    </section>
+
+    <section class="marketing container">
+      <h3>But wait, there's more...</h3>
+      <div class="offers-container">
+        <div class="offers">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+              </path>
+            </svg>
+
+            <div>
+              <h4>Two-Factor
+                Authentication</h4>
+              <p>Keep yourself
+                secure and (optionally) setup two-factor authentication on your user account.</p><a
+                href="https://forge.laravel.com/docs/accounts/your-account.html#securing-your-account-with-two-factor-authentication">Learn
+                more ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Per Site PHP Versions
+              </h4>
+              <p>Want to run
+                multiple apps on a server? Easy! Forge allows you to choose the PHP version per application.</p>
+              <a href="https://forge.laravel.com/docs/servers/php.html#multiple-php-versions">Learn more
+                ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.59 3H20C20.5523 3 21 3.44772 21 4V6.5C21 6.77614 20.7761 7 20.5 7H18.63C18.4864 7.01056 18.3548 7.08369 18.27 7.2H18.22C18.0793 7.34052 18.0002 7.53115 18 7.73V9.49C18 9.76614 17.7761 9.99 17.5 9.99H15.72C15.5212 9.99017 15.3305 10.0693 15.19 10.21L14.93 10.47C14.7893 10.6105 14.7102 10.8012 14.71 11V11.72C14.7089 11.9823 14.6047 12.2337 14.42 12.42L13.54 13.3C13.8418 13.9943 13.9983 14.743 14 15.5C14 18.5376 11.5376 21 8.5 21C5.46243 21 3 18.5376 3 15.5C3 12.4624 5.46243 10 8.5 10C9.26157 9.99907 10.0147 10.1592 10.71 10.47L17.89 3.29C18.0763 3.10526 18.3277 3.0011 18.59 3ZM5.44 16.56C5.44 17.6646 6.33543 18.56 7.44 18.56C7.97043 18.56 8.47914 18.3493 8.85421 17.9742C9.22929 17.5991 9.44 17.0904 9.44 16.56C9.44 15.4554 8.54457 14.56 7.44 14.56C6.33543 14.56 5.44 15.4554 5.44 16.56Z"
+                  fill="currentColor"></path>
+              </svg></div>
+            <div>
+              <h4>Composer Package
+                Authentication</h4>
+              <p>We love
+                Composer, so we've made it first class by allowing you to manage your Composer authentication
+                credentials
+                (auth.json).</p><!---->
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Redirect Management
+              </h4>
+              <p>Maintaining your
+                web server redirects could not be easier. You no longer need to fiddle around with config files!</p><a
+                href="https://forge.laravel.com/docs/sites/redirects.html">Learn more ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Blackfire APM
+                Integration Ready</h4>
+              <p>Every Forge
+                server comes ready to integrate with your Blackfire.io application performance monitoring account.</p><a
+                href="https://forge.laravel.com/docs/resources/integrations.html#blackfire-io">Learn more
+                ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Papertrail Log
+                Aggregation Ready</h4>
+              <p>If you enjoy
+                logging as much as we do, you'll be happy to know that Forge servers are also ready to integrate with
+                your
+                Papertrail account.</p><a class="mt-2 inline-block font-semibold text-gray-600 hover:text-teal-400"
+                href="https://forge.laravel.com/docs/resources/integrations.html#papertrail">Learn more
+                ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg></div>
+            <div>
+              <h4>Scriptable Deployments
+              </h4>
+              <p>Forge offers a
+                sensible default deployment script for your applications, but gives you full power to customize and make
+                it
+                your own.</p><a class="mt-2 inline-block font-semibold text-gray-600 hover:text-teal-400"
+                href="https://forge.laravel.com/docs/sites/deployments.html#deploy-script">Learn more ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Daemon Management</h4>
+              <p>Apart from our
+                first-class Laravel queue worker support, we also allow you to manage any generic Daemons for your web
+                app.
+              </p><a class="mt-2 inline-block font-semibold text-gray-600 hover:text-teal-400"
+                href="https://forge.laravel.com/docs/resources/daemons.html">Learn more ›</a>
+            </div>
+          </div>
+          <div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                </path>
+              </svg></div>
+            <div>
+              <h4>Expert Support</h4>
+              <p>Our support team
+                are always just a few clicks away and ready to help with our shared expertise in server management, PHP,
+                and
+                web apps.</p><!---->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marketing-more">...and that isn't all. <a href="#">Start a free trial</a> and see what else Forge has
+        to offer.</div>
+    </section>
+  </main>
+
+
+  <section class="octane">
+    <div>
+      <div>
+        <svg viewBox="0 0 270 48" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m4.5 10.8-3.8 10c-.9 2.5-.9 5.2.2 7.6l4.4 9.8c1.1 2.4 3.1 4.3 5.5 5.2l10.1 3.9c2.5.9 5.2.9 7.6-.2l9.8-4.4c2.4-1.1 4.3-3.1 5.2-5.5l3.9-10.1c.9-2.5.9-5.2-.2-7.6l-4.4-9.8c-1.1-2.4-3.1-4.3-5.5-5.2l-10.1-3.8c-2.5-.9-5.2-.9-7.6.2l-9.8 4.3c-2.5 1.1-4.3 3.1-5.3 5.6z"
+            fill="#dc2626" />
+          <path d="m5.543 15.394 27.063-9.85 9.85 27.063-27.063 9.85z" fill="#991b1b" />
+          <path d="m7.318 12.32 28.362-5 5 28.362-28.362 5z" fill="#374151" />
+          <path
+            d="m74.1 30.7h8v3.9h-12.1v-20.7h4.1zm21.2-10.9h3.9v14.8h-3.9v-1.7c-1.1 1.3-2.7 2.2-4.9 2.2-4 0-7.3-3.4-7.3-7.8s3.3-7.8 7.3-7.8c2.2 0 3.8.8 4.9 2.2zm0 7.4c0-2.5-1.8-4.2-4.2-4.2s-4.1 1.7-4.1 4.2 1.8 4.2 4.1 4.2c2.5 0 4.2-1.7 4.2-4.2zm11.2-4.9v-2.5h-3.9v14.8h3.9v-7.1c0-3.1 2.5-4 4.5-3.8v-4.3c-1.8.1-3.7.9-4.5 2.9zm17.6-2.5h3.9v14.8h-3.9v-1.7c-1.1 1.3-2.7 2.2-4.9 2.2-4 0-7.3-3.4-7.3-7.8s3.3-7.8 7.3-7.8c2.2 0 3.8.8 4.9 2.2zm0 7.4c0-2.5-1.8-4.2-4.2-4.2s-4.1 1.7-4.1 4.2 1.8 4.2 4.1 4.2c2.4 0 4.2-1.7 4.2-4.2zm13.5 3-3.6-10.4h-4.2l5.7 14.8h4.4l5.7-14.8h-4.2zm23.9-3c0 .6-.1 1.1-.1 1.6h-11.4c.5 2 2.2 2.8 4.2 2.8 1.5 0 2.7-.6 3.3-1.5l3.1 1.8c-1.4 2-3.6 3.2-6.5 3.2-5 0-8.2-3.4-8.2-7.8s3.2-7.8 7.9-7.8c4.5-.1 7.7 3.3 7.7 7.7zm-3.9-1.4c-.5-2.1-2.1-3-3.7-3-2.1 0-3.5 1.1-3.9 3zm6.5-12.8v21.6h3.9v-21.6zm54.3 6.8h4.3v1.4h-4.3v8.6c0 1.2.2 2 .7 2.4.4.4 1.1.7 2 .7.5 0 1.1-.1 1.6-.3v1.6c-.6.2-1.3.2-1.9.2-1.3 0-2.3-.4-3-1.1s-1.1-1.8-1.1-3.2v-8.9h-2.9v-1.4h2.9v-3.8l1.8-.7v4.5zm-10.7 1.2c.7 0 1.5.1 2.1.4s1.4.7 2.2 1.3l.7-1.4c-.6-.6-1.3-1.1-2.2-1.4s-1.8-.5-2.8-.5c-1.4 0-2.6.3-3.6.9s-1.9 1.5-2.4 2.7c-.6 1.1-.8 2.5-.8 4s.3 2.8.8 3.9c.6 1.1 1.4 2 2.4 2.6s2.2.9 3.6.9c1 0 1.9-.2 2.8-.5s1.7-.8 2.3-1.4l-.7-1.4c-.8.6-1.5 1-2.2 1.3s-1.4.4-2.1.4c-1.6 0-2.8-.5-3.7-1.6-.9-1-1.4-2.5-1.4-4.3 0-1.9.5-3.4 1.4-4.4.7-1 2-1.5 3.6-1.5zm-10.3-2.6c.7 1.6 1.1 3.4 1.1 5.6s-.4 4-1.1 5.6-1.8 2.8-3.2 3.6-3 1.3-4.9 1.3-3.5-.4-4.9-1.3c-1.4-.8-2.5-2.1-3.2-3.6-.7-1.6-1.1-3.4-1.1-5.6s.4-4 1.1-5.6 1.8-2.8 3.2-3.6 3-1.3 4.9-1.3 3.6.4 5 1.3 2.3 2 3.1 3.6zm-.8 5.5c0-2.8-.6-5-1.9-6.6-1.3-1.5-3.1-2.3-5.4-2.3s-4.1.8-5.4 2.3-1.9 3.7-1.9 6.6c0 2.8.6 5 1.9 6.6s3.1 2.4 5.4 2.4 4.1-.8 5.4-2.3c1.3-1.6 1.9-3.8 1.9-6.7zm62.3 2.9c0 2 .5 3.5 1.4 4.5s2.2 1.5 3.9 1.5 3.3-.6 4.8-1.8l.7 1.4c-.6.6-1.5 1.1-2.4 1.4-1 .4-2 .5-3.1.5-2.2 0-4-.7-5.2-2-1.3-1.3-1.9-3.2-1.9-5.5 0-1.5.3-2.8.9-3.9s1.4-2 2.4-2.7c1-.6 2.2-.9 3.6-.9 1.9 0 3.4.6 4.5 1.8s1.6 2.9 1.6 5.1v.4h-11.2zm.2-1.4h9.3c-.1-1.5-.6-2.6-1.3-3.4-.8-.8-1.8-1.2-3.1-1.2s-2.4.4-3.3 1.2c-.9.9-1.4 2-1.6 3.4zm-22.8-5.6h1.8v14.5h-1.8v-2.8c-.4 1-1.1 1.7-1.9 2.2-.9.5-1.9.8-3.1.8-1.3 0-2.4-.3-3.4-.9s-1.7-1.5-2.3-2.6c-.5-1.1-.8-2.4-.8-3.9s.3-2.8.8-4c.5-1.1 1.3-2 2.3-2.7 1-.6 2.1-.9 3.4-.9 1.2 0 2.2.3 3.1.8s1.5 1.2 2 2.2v-2.7zm0 7.1c0-1.9-.4-3.4-1.3-4.4-.8-1-2-1.6-3.6-1.6-1.5 0-2.7.5-3.6 1.6s-1.3 2.5-1.3 4.4.4 3.3 1.3 4.3 2.1 1.5 3.6 1.5 2.7-.5 3.5-1.6c1-.8 1.4-2.3 1.4-4.2zm12.8-7.5c-1.2 0-2.2.3-3.1.8s-1.6 1.3-2 2.2l-.2-2.7h-1.7c.2 1.2.2 2.5.2 4v10.4h1.7v-8.4c0-1.5.4-2.7 1.3-3.6s2.1-1.3 3.5-1.3c1.3 0 2.2.3 2.8 1s.9 1.7.9 3.2v9.1h1.8v-9.1c.1-3.7-1.7-5.6-5.2-5.6z"
+            fill="#fff" />
+        </svg>
+
+        <h3>We are ready to deploy Laravel Octane.
+          <br> Are you?
+        </h3>
+        <p>Strap yourself in. All Forge provisioned servers are ready to deliver your site at supersonic speeds using
+          the power of Laravel Octane.</p>
+        <a href="#">
+          <span>Learn more about Octane</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="serverless">
+    <svg class="fancy-svg" width="480" height="300" viewBox="0 0 480 300" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M420 60L360 120H390C406.569 120 420 106.569 420 90V60Z" fill="#25C4F2"></path>
+        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+          d="M120 0L180 60H150C133.431 60 120 46.569 120 30V0Z" fill="#25C4F2"></path>
+        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+          d="M180 60L240 120H210C193.431 120 180 106.569 180 90V60Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M180 60L120 120H150C166.569 120 180 106.569 180 90V60ZM120 0L60 60H90C106.569 60 120 46.569 120 30V0Z"
+          fill="#25C4F2"></path>
+        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+          d="M60 60L120 120H90C73.431 120 60 106.569 60 90V60Z" fill="#25C4F2"></path>
+        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M60 60L0 120H30C46.569 120 60 106.569 60 90V60Z"
+          fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M420 180L480 240H450C433.431 240 420 226.569 420 210V180ZM240 120L300 180H270C253.431 180 240 166.569 240 150V120Z"
+          fill="#25C4F2"></path>
+        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+          d="M300 180L360 240H330C313.431 240 300 226.569 300 210V180Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M300 180L240 240H270C286.569 240 300 226.569 300 210V180Z" fill="#25C4F2"></path>
+        <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+          d="M240 120L180 180H210C226.569 180 240 166.569 240 150V120Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M120 120L180 180H150C133.431 180 120 166.569 120 150V120ZM180 180L240 240H210C193.431 240 180 226.569 180 210V180Z"
+          fill="#25C4F2"></path>
+        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+          d="M180 180L120 240H150C166.569 240 180 226.569 180 210V180Z" fill="#25C4F2"></path>
+        <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd"
+          d="M120 120L60 180H90C106.569 180 120 166.569 120 150V120Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 120L60 180H30C13.431 180 0 166.569 0 150V120Z"
+          fill="#25C4F2"></path>
+        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+          d="M60 180L120 240H90C73.431 240 60 226.569 60 210V180Z" fill="#25C4F2"></path>
+        <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd"
+          d="M60 180L0 240H30C46.569 240 60 226.569 60 210V180Z" fill="#25C4F2"></path>
+        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+          d="M360 240L420 300H390C373.431 300 360 286.569 360 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M360 240L300 300H330C346.569 300 360 286.569 360 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+          d="M240 240L300 300H270C253.431 300 240 286.569 240 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd"
+          d="M240 240L180 300H210C226.569 300 240 286.569 240 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+          d="M120 240L180 300H150C133.431 300 120 286.569 120 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+          d="M120 240L60 300H90C106.569 300 120 286.569 120 270V240Z" fill="#25C4F2"></path>
+        <path opacity="0.12" fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 240L60 300H30C13.431 300 0 286.569 0 270V240Z" fill="#25C4F2"></path>
+      </g>
+    </svg>
+    <div>
+      <div>
+
+        <svg fill="none" viewBox="0 0 121 83" xmlns="http://www.w3.org/2000/svg">
+          <g
+            style="fill-rule:evenodd;clip-rule:evenodd;fill:#25c4f2;stroke:#25c4f2;stroke-width:1.48214;stroke-linecap:round;stroke-linejoin:round">
+            <path d="m1.64844.741211h39.08856l-19.5443 40.758889zm78.17936 0h39.0892l-19.545 40.758889z"
+              fill-opacity=".1" />
+            <path d="m21.1934 41.4995h39.0893l-19.5458 40.7589z" fill-opacity=".22" />
+            <path d="m60.2827 41.4995h39.0893l-19.545 40.7589z" fill-opacity=".2" />
+            <path d="m60.2824 41.4997h-39.09l19.545-40.758977z" fill-opacity=".4" />
+            <path d="m99.3718 41.4997h-39.0901l19.5451-40.758977z" fill-opacity=".4" />
+            <path d="m79.8276 82.2584h-39.0893l19.5443-40.7589z" fill-opacity=".5" />
+          </g>
+        </svg>
+
+        <h3>Want to go totally serverless?
+        </h3>
+        <p>Laravel Vapor is a serverless, auto-scaling deployment platform for Laravel, powered by Amazon Lambda. Launch
+          your Laravel infrastructure on Vapor and fall in love with the scalable simplicity of serverless.</p>
+        <a href="#">
+          <span>Learn more about Vapor</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <section>
+      <a href="#">
+        <div>
+          <div class="content">
+            <span>Laravel</span>
+            <svg data-v-4e7fb11c="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+              class="w-6 text-gray-400">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 0 1 0-1.414L10.586 10 7.293 6.707a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+
+          <p>The PHP Framework for web artisans.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div>
+          <div class="content">
+            <span>Vapor</span>
+
+            <svg data-v-4e7fb11c="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+              class="w-6 text-gray-400">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 0 1 0-1.414L10.586 10 7.293 6.707a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <p>Incredible scale without breaking a sweat.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div>
+          <div class="content">
+            <span>Envoyer</span>
+
+            <svg data-v-4e7fb11c="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+              class="w-6 text-gray-400">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 0 1 0-1.414L10.586 10 7.293 6.707a1 1 0 0 1 .012-1.402 1 1 0 0 1 1.402-.012l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <p>Zero Downtime PHP deployment.</p>
+        </div>
+      </a>
+    </section>
+
+    <div class="laravel">
+      <div>
+        <div class="logo-box center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 52" class="h-6 lg:mr-4">
+            <path
+              d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25a.8.8 0 0 1-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334a.82.82 0 0 1 .028-.21c.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093s.053-.04.079-.06.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068s.055.038.078.06c.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51a.81.81 0 0 1 .028-.208c.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06s.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068l.077.06c.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066s-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084s-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1s-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002V12.33L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z"
+              fill="#ff2d20" fill-rule="evenodd"></path>
+          </svg>
+          <span>By the makers of Laravel</span>
+        </div>
+
+        <span>
+          Copyright <span class="time"></span> © Laravel LLC.
+        </span>
+      </div>
+    </div>
+
+  </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>

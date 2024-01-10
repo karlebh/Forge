@@ -1,0 +1,148 @@
+.testimony {
+  margin-top: 10rem;
+  position: relative;
+}
+
+.testimony .transparent-below {
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 1));
+  /* background-image: linear-gradient(white, transparent); */
+  height: 150px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.break {
+  display: none;
+}
+
+.testimony h1 {
+  text-align: center;
+  color: rgb(31 41 55/ 1);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.comment {
+  background-color: rgb(243 244 246 / 1);
+  padding: 1.75rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.5rem;
+  border-radius: .75rem;
+}
+
+.comment h4 {
+  font-weight: 400;
+}
+
+.comment span {
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.comment p {
+  font-weight: 400;
+  font-size: .85rem;
+  line-height: 1.4rem;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+}
+
+.comment-header div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2.5rem;
+}
+
+.comment-header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.teal {
+  color: #18b69b;
+}
+
+.testimonies {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem 0;
+  margin: 1.25rem 0;
+}
+
+.tablet-testimonies,
+.desktop-testimonies {
+  display: none;
+}
+
+
+@media screen and (min-width: 640px) {
+  .break {
+    display: inline;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .testimonies,
+  .desktop-testimonies {
+    display: none;
+  }
+
+  .tablet-testimonies {
+    display: flex;
+    gap: 0 .8rem;
+    margin: 1.75rem 0;
+  }
+
+  .tablet-testimonies>div {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .testimonies,
+  .tablet-testimonies {
+    display: none;
+  }
+
+  .desktop-testimonies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 2.25rem 0;
+  }
+
+  .desktop-testimonies>div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+  .testimony h1 {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+
+}

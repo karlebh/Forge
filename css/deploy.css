@@ -1,0 +1,60 @@
+@import url(./deploy-marketing.css);
+
+.deploy {
+  margin: 5rem 0;
+  text-align: center;
+  padding: 0 2.75rem;
+}
+
+.deploy h1 {
+  color: rgb(31 41 55 / 1);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -.025em;
+  max-width: 48rem;
+}
+
+.deploy p {
+  color: rgb(107 114 128/ 1);
+  margin-top: 1.25rem;
+  line-height: 1.375;
+  font-weight: 400;
+  font-size: .875rem;
+  max-width: 48rem;
+}
+
+.deploy img {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  max-height: 32rem;
+  max-width: 32rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .deploy img {
+    max-width: 36rem;
+  }
+
+  .deploy {
+    margin-top: 7rem;
+  }
+
+}
+
+@media screen and (min-width: 1240px) {
+  .deploy h1 {
+    font-size: 2rem;
+  }
+
+  .deploy img {
+    max-width: 42rem;
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+  }
+
+  .deploy {
+    margin-top: 9rem;
+  }
+}
